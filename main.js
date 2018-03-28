@@ -28,7 +28,7 @@ database.ref().on("child_added", function(snapshot){
     let newBill = $('<td>' + bill + '</td>');
     newRow.append(newName).append(newRole).append(newStart).append(newMonths).append(newRate).append(newBill);
     $('#table-content').append(newRow);
-})
+});
 
 $(document).ready(function(){
     $('#add-employee-btn').click(function(event){
